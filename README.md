@@ -1,4 +1,4 @@
-# Abdullahi Yahaya — Portfolio -ASSIGNMENT
+# Abdullahi Yahaya — Portfolio ASSIGNMENT
 
 Personal, terminal-styled personal portfolio site — no build step, no
 framework, just HTML/CSS/JS — designed to be trivial to containerize and ship.
