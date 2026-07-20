@@ -1,6 +1,6 @@
-# Abdullahi Yahaya — Portfolio
+# Abdullahi Yahaya — Portfolio -ASSIGNMENT
 
-A single-file, terminal-styled personal portfolio site — no build step, no
+Personal, terminal-styled personal portfolio site — no build step, no
 framework, just HTML/CSS/JS — designed to be trivial to containerize and ship.
 
 **Live sections:** About · Experience · Education · Projects · Skills · Contact
@@ -19,13 +19,6 @@ framework, just HTML/CSS/JS — designed to be trivial to containerize and ship.
 └── README.md
 ```
 
-> The old Gulp/Sass build (`gulpfile.js`, `package.json`, `scss/`) has been
-> removed. The site is now plain static files, so there's nothing to compile
-> before it runs — which also makes the Docker image smaller and the build
-> faster.
-
----
-
 ## Run it locally (no Docker)
 
 Any static file server works. Easiest options:
@@ -33,18 +26,12 @@ Any static file server works. Easiest options:
 **Option A — just open it**
 Double-click `index.html`, or open it directly in a browser.
 
-**Option B — a tiny local server** (recommended, avoids some browser
-restrictions on local files)
-```bash
-# Python 3
-python3 -m http.server 8080
-# then visit http://localhost:8080
-```
-or, with Node installed:
+**Option B — a tiny local server** 
+
+with Node installed:
 ```bash
 npx serve .
 ```
-
 ---
 
 ## Run it with Docker
@@ -52,12 +39,12 @@ npx serve .
 ### 1. Build the image
 From the project root (where `Dockerfile` lives):
 ```bash
-docker build -t portfolio:latest .
+docker build -t portfolio: latest
 ```
 
 ### 2. Run the container
 ```bash
-docker run -d -p 8080:80 --name portfolio portfolio:latest
+docker run -d -p 8080:80 --name portfolio portfolio: latest
 ```
 Visit **http://localhost:8080**
 
@@ -66,9 +53,3 @@ Visit **http://localhost:8080**
 docker stop portfolio
 docker rm portfolio
 ```
-
----
-
-## License
-
-MIT — see [LICENSE.md](LICENSE.md).
